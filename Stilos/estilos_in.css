@@ -1,6 +1,7 @@
 :root{
     --color_p:#ecc203;
     --color_s:#cf9f00;
+    --color_t:#b17b08;
     --color_bl:#eeeeee;
     --color_n:#111111;
 }
@@ -38,8 +39,16 @@ nav{
     color: var(--colorF);
   }
 
-  /*Estilos opciones*/
+  /*-------------------*/
+  /*Barra de categorias*/
+  .nave{
+    display: flex;
+  }
+  .logo{
+    margin: 2rem 2rem;
+  }
   .op{
+    display: flex;
     justify-items: center;
     padding: 3rem;
   }
@@ -100,3 +109,69 @@ nav{
     border-radius: 1rem;
     background-color: var(--color_s);
 }
+/* -----------------------------------------  */
+/* BUSCADOR_ Buscador de Barra de navegacion  */
+.busc{
+    margin-top: 3.2rem;
+    margin-left: 40rem;
+}
+#search-form {
+    text-align: center;
+    margin-top: 0.063rem;
+    position: relative; /* Establece una posición relativa */
+  }
+  
+  #search-input {
+    padding: 1.3rem 1.3rem;
+    width: 18.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  button[type="submit"] {
+    padding: 1.4rem 1.4rem;
+    background-color: var(--color_t);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color:var(--color_p);
+  }
+  
+  /* Estilos para la lista de resultados */
+  #results-list {
+    color: #000000;
+    display: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;/* Limita la altura de la lista para hacerla desplazable */
+    overflow-y: auto; /* Agrega una barra de desplazamiento vertical si es necesario */
+    border-radius: 1rem;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
+    position: absolute; /* Establece una posición absoluta */
+  
+    background-color: #fff; /* Color de fondo para que los resultados sean visibles */
+    display: block; /* Inicialmente, oculta la lista */
+  }
+  
+  #results-list li {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+    transition: background-color 0.3s ease;
+  }
+  
+  #results-list li:last-child {
+    border-bottom: none; /* Elimina el borde inferior del último elemento */
+  }
+  
+  #results-list li:hover {
+    text-decoration: bold;
+    background-color: var(--color_t);
+  }
+  

@@ -5,13 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Stilos/estilos_in.css">
     <link rel="stylesheet" href="Stilos/normalize.css">
+    <link rel="icon" href="Img/Modernas_1.png">
     <title>Modernas</title>
 </head>
 <body>
     <section>
         <nav>
            
-            <div class="op">
+            <div class="nave">
+                <div class="logo">
+                    <img src="Img/Modernas_1.png" alt="" height="60px">
+                </div>
+                <div class="op">
             <div class="dropdown">
                 <button onclick="toggleDropdown(this)" class="dropbtn" onmouseout="toggleDropdown(this)">Sillas</button>
                 <div class="dropdown-content">
@@ -64,10 +69,22 @@
                 </div>
             </div>
         </div>
+        <div class="busc">
+            <form id="search-form">
+              <input type="text" id="search-input" placeholder="Muebles">
+              <button type="submit">Buscar</button>
+          </form>
+          <div id="results-section">
+              <ul id="results-list"></ul>
+          </div>
+        </div>
+        </div>
         </nav>
     </section>
     <script src="js/barra.js"></script>
     <script src="js/barra1.js"></script>
+    <script src="js/buscador.js"></script>
+    <script src="js/buscadores.js"></script>
     <script src="js/icono.js"></script>
 </body>
 
